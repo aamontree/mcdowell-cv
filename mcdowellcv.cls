@@ -35,7 +35,7 @@
 \LoadClass[letterpaper,\mainfontsize]{article} 
 
 % Set document margins
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} 
 
 % Set font face
 \usepackage{fontspec}
@@ -173,7 +173,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 % Print a section header
 \makeatletter
 \newenvironment{cvsection}[1]{
-	\vspace*{\beforesectionheaderspace}
+	% \vspace*{\beforesectionheaderspace}
 	% Set text margins to equal \tabcolsep (6pt by default)
 	\begin{adjustwidth}{\sectionheadermargin}{\sectionheadermargin}
 		\textsc{\textbf{#1}}
